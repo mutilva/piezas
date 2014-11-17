@@ -12,7 +12,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-     ('Yolanda Robla', 'info@ysoft.biz'),
+     ('POD Recambios', 'info@podrecambios.es'),
 )
 
 MANAGERS = ADMINS
@@ -43,7 +43,7 @@ TIME_ZONE = 'Europe/Madrid'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'es-es'
 
-SITE_ID = 1
+SITE_ID = 2
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -161,7 +161,7 @@ INSTALLED_APPS = INSTALLED_APPS + get_core_apps([
     'piezas.apps.address'
 ])
 
-SITE_ID = 1
+SITE_ID = 2
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 
@@ -227,7 +227,7 @@ OSCAR_SHOP_TAGLINE = "Ahorra tiempo y dinero en la búsqueda de tu pieza recuper
 OSCAR_DEFAULT_CURRENCY = 'EUR'
 OSCAR_CURRENCY_LOCALE = 'es_ES'
 OSCAR_ALLOW_ANON_REVIEWS = False
-OSCAR_FROM_EMAIL = 'info@ysoft.biz'
+OSCAR_FROM_EMAIL = 'avisos@podrecambios.es'
 LOGIN_REDIRECT_URL = '/'
 LANGUAGES = ()
 
