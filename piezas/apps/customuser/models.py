@@ -55,7 +55,7 @@ if hasattr(auth_models, 'BaseUserManager'):
         commercial_name = models.CharField(
             _('Commercial name'), max_length=255, blank=True)
         social_name = models.CharField(
-            _('Social name'), max_length=255, blank=True)
+            _('Social name'), max_length=255, blank=False)
         first_name = models.CharField(
             _('First name'), max_length=255, blank=True)
         last_name = models.CharField(
