@@ -31,7 +31,7 @@ class PodEmailUserCreationForm(EmailUserCreationForm):
 
 
 class ProfileForm(forms.ModelForm):
-    iban = IBANFormField(label=_('Bank number account (IBAN format)'), required=True)
+    iban = IBANFormField(label=_('Bank number account (IBAN format)'), required=False)
 
     def __init__(self, user, *args, **kwargs):
         self.user = user
