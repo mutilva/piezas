@@ -39,6 +39,10 @@
                         <td>{{ customer.get_full_name|default:"-" }}</td>
                     </tr>
                     <tr>
+                        <th>{% trans "Phone" %}</th>
+                        <td>{{ customer.phone_number }}</td>
+                    </tr>
+                    <tr>
                         <th>{% trans "Email" %}</th>
                         <td>{{ customer.email }}</td>
                     </tr>
