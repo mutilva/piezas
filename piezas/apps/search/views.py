@@ -167,7 +167,7 @@ class HomeView(FormView):
             return HttpResponse(json.dumps({"result":result}), mimetype='application/json')
         else:
             self.form_invalid(form)
-            return HttpResponse(json.dumps({"result":False, "error_message": unicode(_('Please fill all mandatory fields'))}), mimetype='application/json')
+            return HttpResponse(json.dumps({"result":False, "error_message": unicode(_('Por favor completa todos los campos marcados con *'))}), mimetype='application/json')
 
 
 class ConfirmView(FormView):
