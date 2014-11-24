@@ -90,16 +90,7 @@
 			<h4>{% trans "Customer details" %}</h4>
 
 			<div class="control-group span3">
-				<label class="control-label">{% trans "Email" %}: {{searchrequest.owner.email}}</label>
-			</div>
-			<div class="control-group span3">
-				<label class="control-label">{% trans "Name" %}: {{searchrequest.owner.commercial_name}}</label>
-			</div>
-			<div class="control-group span3">
-				<label class="control-label">{% trans "Contact person" %}: {{searchrequest.owner.contact_person}}</label>
-			</div>
-			<div class="control-group span3">
-				<label class="control-label">{% trans "Address" %}: {{searchrequest.owner.get_default_shipping_address}}</label>
+				<label class="control-label">{% trans "Address" %}: {{searchrequest.owner.get_default_shipping_address.city}} ({{searchrequest.owner.get_default_shipping_address.state}}). C.P. {{searchrequest.owner.get_default_shipping_address.postcode}} </label>
 			</div>
 
 			<div style="clear:both"></div>
