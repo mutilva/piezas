@@ -188,7 +188,9 @@
 		<div class="responsive-table">
 			<table class="table span12">
 			<tr><th style="width:15%;">{% trans "Owner" %}</th><td style="width:35%;">{% if quote.owner.commercial_name %}
-			{{quote.owner.commercial_name}}{% else %}{{quote.owner}}{% endif %}</td>
+			{{quote.owner.commercial_name}}{% else %}{{quote.owner}}{% endif %}
+			<br>{{quote.owner.email}}<br>Tfno. {{quote.owner.phone_number}}</th>
+			</td>
 			<th style="width:15%;">{% trans "Date created" %}</th><td style="width:35%;">{{quote.date_created| date:"d/m/Y H:i:s"}}</td></tr>
 
 			<tr><th>{% trans "Date updated" %}</th><td>{{quote.date_updated| date:"d/m/Y H:i:s"}}</td>
@@ -402,4 +404,3 @@
 	});
   </script>
 {% endblock content %}
-
