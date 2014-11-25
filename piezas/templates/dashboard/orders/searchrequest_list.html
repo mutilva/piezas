@@ -96,6 +96,11 @@
                         <th>{% trans "Status" %}</th>
                         <th>{% trans "Owner" %}</th>
                         <th>{% trans "Date of creation" %}</th>
+			<th>{% trans "Received quotes" %}</th>
+			<th>{% trans "Accepted quotes" %}</th>
+                	<th>{% trans "Brand" %}</th>
+                	<th>{% trans "Version" %}</th>
+                	<th>{% trans "Engine" %}</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -106,8 +111,13 @@
 			    <td>{{ searchrequest.name}}</td>
 			    <td>{{ searchrequest.num_items}}</td>
                             <td>{% trans searchrequest.state %}</td>
-			    <td>{{ searchrequest.owner.email }}</td>
+			    <td>{{ searchrequest.owner.commercial_name }} (tfno. {{ searchrequest.owner.phone_number }})</td>
                             <td>{{ searchrequest.date_created }}</td>
+                            <td>{{ searchrequest.num_quotes }}</td>
+		    	    <td>{{ searchrequest.accepted_quotes }}</td>
+                    	    <td>{{ searchrequest.brand.name }}</td>
+			    <td>{{ searchrequest.version.name }}</td>
+			    <td>{{ searchrequest.engine.name }}</td>
                             <td>
                                 <a class="btn btn-info" href="{% url 'dashboard:searchrequest-detail' number=searchrequest.id %}">{% trans "View" %}</a>
                             </td>
