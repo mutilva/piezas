@@ -404,8 +404,8 @@ class CreateQuoteView(UpdateView):
             raise PermissionDenied()
 
         # validate distance
-        if not self.object.has_valid_distance(self.request.user):
-            raise PermissionDenied()
+        #if not self.object.has_valid_distance(self.request.user):
+        #   raise PermissionDenied()
 
         # validate if we already sent a quote to this search
         sent_quotes = None
